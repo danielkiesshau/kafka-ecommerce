@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -45,6 +49,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.ecommerce" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.ecommerce" />
     </key>
@@ -125,8 +132,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.NewOrderMain" />
-        <item itemvalue="Application.FraudDetectorService" />
         <item itemvalue="Application.LogService" />
+        <item itemvalue="Application.FraudDetectorService" />
         <item itemvalue="Application.EmailService" />
       </list>
     </recent_temporary>
@@ -140,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650240863989</updated>
       <workItem from="1650240868809" duration="2638000" />
-      <workItem from="1650243736940" duration="3809000" />
+      <workItem from="1650243736940" duration="5293000" />
     </task>
     <servers />
   </component>
