@@ -8,6 +8,7 @@ import java.io.Closeable;
 import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 public class KafkaService implements Closeable {
     private final KafkaConsumer<String, String> consumer;
@@ -15,12 +16,23 @@ public class KafkaService implements Closeable {
 
 
     public KafkaService(String groupId, String topic, ConsumerFunction parse) {
-        this.parse = parse;
-        this.consumer = new KafkaConsumer(properties(groupId));
-        var topics = Collections.singletonList("ECOMMERCE_SEND_EMAIL");
+        this(parse, groupId);
+        var topics = Collections.singletonList(topic);
 
         consumer.subscribe(topics);
     }
+
+    public KafkaService(String groupId, Pattern topic, ConsumerFunction parse) {
+        this(parse, groupId);
+
+        consumer.subscribe(topic);
+    }
+
+    private KafkaService(ConsumerFunction parse, String groupId) {
+        this.parse = parse;
+        this.consumer = new KafkaConsumer(properties(groupId));
+    }
+
 
     void run() {
         while(true) {
