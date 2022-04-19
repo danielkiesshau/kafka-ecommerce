@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/Email.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/GsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-email/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-fraud-detector/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-new-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/ConsumerFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/GsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/GsonDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/GsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/GsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-log/src/main/java/br/com/ecommerce/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,37 +52,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "14",
+    "last_directory_selection": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/common-kafka/src/main/java",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.ecommerce" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.ecommerce" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.ecommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EmailService">
-    <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
-      <module name="ecommerce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.br.com.ecommerce.NewOrderMain">
     <configuration name="FraudDetectorService (1)" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
       <module name="ecommerce" />
@@ -87,7 +96,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.ecommerce.EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
+      <module name="service-email" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.ecommerce.FraudDetectorService" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
       <module name="ecommerce" />
       <extension name="coverage">
@@ -100,9 +122,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
-      <module name="ecommerce" />
+    <configuration name="br.com.ecommerce.FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
+      <module name="service-fraud-detector" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -113,9 +135,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.ecommerce.LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
+      <module name="service-log" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.ecommerce.NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.NewOrderMain" />
-      <module name="ecommerce" />
+      <module name="service-new-order" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -127,18 +162,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FraudDetectorService (1)" />
-      <item itemvalue="Application.EmailService" />
-      <item itemvalue="Application.FraudDetectorService" />
-      <item itemvalue="Application.LogService" />
-      <item itemvalue="Application.NewOrderMain" />
+      <item itemvalue="Application.br.com.ecommerce.EmailService" />
+      <item itemvalue="Application.br.com.ecommerce.FraudDetectorService" />
+      <item itemvalue="Application.br.com.ecommerce.LogService" />
+      <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmailService" />
-        <item itemvalue="Application.NewOrderMain" />
-        <item itemvalue="Application.LogService" />
-        <item itemvalue="Application.FraudDetectorService" />
+        <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
+        <item itemvalue="Application.br.com.ecommerce.LogService" />
+        <item itemvalue="Application.br.com.ecommerce.FraudDetectorService" />
+        <item itemvalue="Application.br.com.ecommerce.EmailService" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +187,7 @@
       <workItem from="1650240868809" duration="2638000" />
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
-      <workItem from="1650377494115" duration="5469000" />
+      <workItem from="1650377494115" duration="7093000" />
     </task>
     <servers />
   </component>
