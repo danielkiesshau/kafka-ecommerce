@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/GsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/GsonDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/ConsumerFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ecommerce/LogService.java" afterDir="false" />
@@ -58,7 +60,7 @@
       <recent name="br.com.ecommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewOrderMain">
+  <component name="RunManager" selected="Application.EmailService">
     <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
       <module name="ecommerce" />
@@ -133,10 +135,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmailService" />
         <item itemvalue="Application.NewOrderMain" />
         <item itemvalue="Application.LogService" />
         <item itemvalue="Application.FraudDetectorService" />
-        <item itemvalue="Application.EmailService" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +153,7 @@
       <workItem from="1650240868809" duration="2638000" />
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
-      <workItem from="1650377494115" duration="374000" />
+      <workItem from="1650377494115" duration="5469000" />
     </task>
     <servers />
   </component>

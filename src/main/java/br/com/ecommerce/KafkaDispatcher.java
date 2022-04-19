@@ -20,7 +20,6 @@ class KafkaDispatcher<T> implements Closeable {
     void send(String topic, String key, T value) throws ExecutionException, InterruptedException {
         var record = new ProducerRecord<>(topic, key, value);
 
-
         Callback callback = (data, ex) -> {
             if (ex != null) {
                 ex.printStackTrace();
