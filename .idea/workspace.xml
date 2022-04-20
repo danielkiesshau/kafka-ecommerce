@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,20 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "14",
-    "last_directory_selection": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/common-kafka/src/main/java",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;14&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/common-kafka/src/main/java&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.ecommerce" />
@@ -144,8 +144,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.br.com.ecommerce.EmailService" />
+      <item itemvalue="Application.FraudDetectorService (1)" />
       <item itemvalue="Application.br.com.ecommerce.FraudDetectorService" />
+      <item itemvalue="Application.br.com.ecommerce.EmailService" />
       <item itemvalue="Application.br.com.ecommerce.LogService" />
       <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
     </list>
@@ -169,7 +170,7 @@
       <workItem from="1650240868809" duration="2638000" />
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
-      <workItem from="1650377494115" duration="7875000" />
+      <workItem from="1650377494115" duration="8381000" />
     </task>
     <servers />
   </component>
