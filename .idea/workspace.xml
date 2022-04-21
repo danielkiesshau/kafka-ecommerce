@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/HttpEcommerceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/NewOrderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,20 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HttpEcommerceService">
+  <component name="RunManager" selected="Application.CreateUserService">
+    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
+      <module name="service-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
       <module name="service-fraud-detector" />
@@ -137,33 +146,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.ecommerce.NewOrderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.NewOrderMain" />
-      <module name="service-new-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.CreateUserService" />
       <item itemvalue="Application.FraudDetectorService" />
       <item itemvalue="Application.HttpEcommerceService" />
       <item itemvalue="Application.br.com.ecommerce.EmailService" />
       <item itemvalue="Application.br.com.ecommerce.LogService" />
-      <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreateUserService" />
         <item itemvalue="Application.HttpEcommerceService" />
-        <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
-        <item itemvalue="Application.br.com.ecommerce.LogService" />
         <item itemvalue="Application.br.com.ecommerce.EmailService" />
         <item itemvalue="Application.FraudDetectorService" />
+        <item itemvalue="Application.br.com.ecommerce.LogService" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +175,7 @@
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
-      <workItem from="1650479953212" duration="7046000" />
+      <workItem from="1650479953212" duration="9116000" />
     </task>
     <servers />
   </component>
