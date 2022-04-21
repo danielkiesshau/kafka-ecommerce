@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/IO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,22 +44,27 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "14",
     "last_directory_selection": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/common-kafka/src/main/java",
+    "last_opened_file_path": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/service-reading-report/target",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.ecommerce" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service-reading-report/target" />
+      <recent name="$PROJECT_DIR$/service-reading-report/src/main/java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.ecommerce" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
       <recent name="br.com.ecommerce" />
+      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -67,9 +72,9 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.CreateUserService">
-    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
+  <component name="RunManager" selected="Application.br.com.ecommerce.ReadingReportService">
+    <configuration name="BatchSendMessageService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.BatchSendMessageService" />
       <module name="service-users" />
       <extension name="coverage">
         <pattern>
@@ -81,35 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
-      <module name="service-fraud-detector" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpEcommerceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.HttpEcommerceService" />
-      <module name="service-http-ecommerce" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="br.com.ecommerce.EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
       <module name="service-email" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.ecommerce.CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
+      <module name="service-users" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -133,9 +125,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.ecommerce.LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
-      <module name="service-log" />
+    <configuration name="br.com.ecommerce.HttpEcommerceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.HttpEcommerceService" />
+      <module name="service-http-ecommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.ecommerce.ReadingReportService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.ReadingReportService" />
+      <module name="service-reading-report" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -147,19 +153,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CreateUserService" />
-      <item itemvalue="Application.FraudDetectorService" />
-      <item itemvalue="Application.HttpEcommerceService" />
+      <item itemvalue="Application.BatchSendMessageService" />
+      <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
+      <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
+      <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
       <item itemvalue="Application.br.com.ecommerce.EmailService" />
-      <item itemvalue="Application.br.com.ecommerce.LogService" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreateUserService" />
-        <item itemvalue="Application.HttpEcommerceService" />
+        <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
+        <item itemvalue="Application.BatchSendMessageService" />
+        <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
+        <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
         <item itemvalue="Application.br.com.ecommerce.EmailService" />
-        <item itemvalue="Application.FraudDetectorService" />
-        <item itemvalue="Application.br.com.ecommerce.LogService" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +181,7 @@
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
-      <workItem from="1650479953212" duration="9116000" />
+      <workItem from="1650479953212" duration="14662000" />
     </task>
     <servers />
   </component>
@@ -195,5 +201,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/IO.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/ReadingReportService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/ReadingReportService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
