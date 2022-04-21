@@ -9,28 +9,27 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
 
 public class KafkaService<T> implements Closeable {
-    private final KafkaConsumer<String, T> consumer;
-    private final ConsumerFunction parse;
+    private final KafkaConsumer<String, Message<T>> consumer;
+    private final ConsumerFunction<T> parse;
 
 
-    public KafkaService(String groupId, String topic, ConsumerFunction parse, Class<T> type, Map<String, String> properties) {
+    public KafkaService(String groupId, String topic, ConsumerFunction<T> parse, Class<T> type, Map<String, String> properties) {
         this(parse, groupId, type, properties);
         var topics = Collections.singletonList(topic);
 
         consumer.subscribe(topics);
     }
 
-    public KafkaService(String groupId, Pattern topic, ConsumerFunction parse, Class<T> type, Map<String, String> properties) {
+    public KafkaService(String groupId, Pattern topic, ConsumerFunction<T> parse, Class<T> type, Map<String, String> properties) {
         this(parse, groupId, type, properties);
 
         consumer.subscribe(topic);
     }
 
-    private KafkaService(ConsumerFunction parse, String groupId, Class<T> type, Map<String, String> properties) {
+    private KafkaService(ConsumerFunction<T> parse, String groupId, Class<T> type, Map<String, String> properties) {
         this.parse = parse;
         this.consumer = new KafkaConsumer(getProperties(groupId, type, properties));
     }
@@ -62,7 +61,6 @@ public class KafkaService<T> implements Closeable {
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, GsonDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupId);
-        properties.setProperty(GsonDeserializer.TYPE_CONFIG,  type.getName());
         properties.putAll(overrideProperties);
 
         return properties;

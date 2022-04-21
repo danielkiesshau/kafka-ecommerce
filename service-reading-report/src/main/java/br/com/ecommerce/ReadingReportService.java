@@ -16,7 +16,7 @@ public class ReadingReportService {
         try(
             var service = new KafkaService(
                 ReadingReportService.class.getSimpleName(),
-                "USER_GENERATE_READING_REPORT",
+                "ECOMMERCE_USER_GENERATE_READING_REPORT",
                 fraudDetectorService::parse,
                 User.class,
                 Map.of()
@@ -26,11 +26,12 @@ public class ReadingReportService {
         }
     }
 
-    private void parse(ConsumerRecord<String, User> record) throws IOException {
+    private void parse(ConsumerRecord<String, Message<User>> record) throws IOException {
         System.out.println("------------------------------------");
         System.out.println("Processing report for " + record.value());
 
-        var user = record.value();
+        var message = record.value();
+        var user = message.getPayload();
         var target = new File(user.getReportPath());
 
         IO.copyTo(SOURCE, target);
