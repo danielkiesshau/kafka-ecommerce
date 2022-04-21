@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/CreateUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/HttpEcommerceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/NewOrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/ConsumerFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/ConsumerFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/NewOrderMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +62,7 @@
       <recent name="br.com.ecommerce" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="br.com.ecommerce" />
     </key>
   </component>
@@ -75,10 +71,10 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.br.com.ecommerce.NewOrderMain">
-    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
-      <module name="service-users" />
+  <component name="RunManager" selected="Application.HttpEcommerceService">
+    <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
+      <module name="service-fraud-detector" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -89,9 +85,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
-      <module name="service-fraud-detector" />
+    <configuration name="HttpEcommerceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.HttpEcommerceService" />
+      <module name="service-http-ecommerce" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -155,19 +151,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CreateUserService" />
       <item itemvalue="Application.FraudDetectorService" />
+      <item itemvalue="Application.HttpEcommerceService" />
       <item itemvalue="Application.br.com.ecommerce.EmailService" />
       <item itemvalue="Application.br.com.ecommerce.LogService" />
       <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpEcommerceService" />
         <item itemvalue="Application.br.com.ecommerce.NewOrderMain" />
         <item itemvalue="Application.br.com.ecommerce.LogService" />
         <item itemvalue="Application.br.com.ecommerce.EmailService" />
         <item itemvalue="Application.FraudDetectorService" />
-        <item itemvalue="Application.CreateUserService" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +179,7 @@
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
-      <workItem from="1650479953212" duration="5901000" />
+      <workItem from="1650479953212" duration="7046000" />
     </task>
     <servers />
   </component>
