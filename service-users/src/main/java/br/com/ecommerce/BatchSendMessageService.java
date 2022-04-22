@@ -31,7 +31,7 @@ public class BatchSendMessageService {
 
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, ExecutionException, InterruptedException {
         var batchServiceService = new BatchSendMessageService();
 
         try(
@@ -58,7 +58,8 @@ public class BatchSendMessageService {
         var message = record.value();
 
         for (User user: getAllUsers()) {
-            userDispatcher.send(message.getPayload(), user.getUuid(), user, message.getId().continueWith(BatchSendMessageService.class.getSimpleName()));
+            userDispatcher.sendAsync(message.getPayload(), user.getUuid(), user, message.getId().continueWith(BatchSendMessageService.class.getSimpleName()));
+            System.out.println("");
         }
     }
 

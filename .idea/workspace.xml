@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/KafkaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/FraudDetectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-fraud-detector/src/main/java/br/com/ecommerce/FraudDetectorService.java" afterDir="false" />
@@ -187,7 +188,7 @@
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
-      <workItem from="1650479953212" duration="19600000" />
+      <workItem from="1650479953212" duration="20883000" />
     </task>
     <servers />
   </component>
