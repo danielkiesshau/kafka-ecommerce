@@ -18,8 +18,10 @@ public class NewOrderMain {
                     var order = new Order(orderId, amount, userEmail);
                     var email = new Email("Order in progress", "Thank you for your order! We are processing your order");
 
-                    orderDispatcher.send("ECOMMERCE_NEW_ORDER", userEmail, order, new CorrelationId(NewOrderMain.class.getSimpleName()));
-                    emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userEmail, email, new CorrelationId(NewOrderMain.class.getSimpleName()));
+                    CorrelationId id = new CorrelationId(NewOrderMain.class.getSimpleName());
+
+                    orderDispatcher.send("ECOMMERCE_NEW_ORDER", userEmail, order, id);
+                    emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userEmail, email, id);
                 }
             }
         }
