@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/dispatcher/KafkaDispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/ecommerce/dispatcher/KafkaDispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-email-new-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-email-new-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-email-new-order/src/main/java/br/com/ecommerce/EmailNewOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email-new-order/src/main/java/br/com/ecommerce/EmailNewOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/NewOrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-http-ecommerce/src/main/java/br/com/ecommerce/NewOrderServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/NewOrderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-new-order/src/main/java/br/com/ecommerce/NewOrderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-reading-report/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-reading-report/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/ReadingReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-reading-report/src/main/java/br/com/ecommerce/ReadingReportService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +55,7 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "14",
     "last_directory_selection": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/common-kafka/src/main/java",
-    "last_opened_file_path": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/service-reading-report/target",
+    "last_opened_file_path": "/Users/danielkiesshau/Documents/VSCODE/Estudos/ALURA/Kafka/ecommerce/service-email-new-order/src/main/java",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -57,6 +67,7 @@
       <recent name="br.com.ecommerce" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/service-email-new-order/src/main/java" />
       <recent name="$PROJECT_DIR$/service-reading-report/target" />
       <recent name="$PROJECT_DIR$/service-reading-report/src/main/java" />
     </key>
@@ -87,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
-      <module name="service-log" />
+    <configuration name="EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailNewOrderService" />
+      <module name="service-email-new-order" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.dispatcher.*" />
+          <option name="PATTERN" value="br.com.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,9 +111,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.ecommerce.CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
-      <module name="service-users" />
+    <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.LogService" />
+      <module name="service-log" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.dispatcher.*" />
@@ -155,18 +166,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.br.com.ecommerce.BatchSendMessageService" />
+      <item itemvalue="Application.EmailNewOrderService" />
       <item itemvalue="Application.br.com.ecommerce.LogService" />
       <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
-      <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
       <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
-        <item itemvalue="Application.br.com.ecommerce.BatchSendMessageService" />
+        <item itemvalue="Application.EmailNewOrderService" />
         <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
+        <item itemvalue="Application.br.com.ecommerce.BatchSendMessageService" />
         <item itemvalue="Application.br.com.ecommerce.LogService" />
-        <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +193,7 @@
       <workItem from="1650243736940" duration="6818000" />
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
-      <workItem from="1650479953212" duration="21960000" />
+      <workItem from="1650479953212" duration="24722000" />
     </task>
     <servers />
   </component>

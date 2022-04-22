@@ -12,14 +12,12 @@ import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 public class NewOrderServlet extends HttpServlet {
-    private final KafkaDispatcher<Email> emailDispatcher = new KafkaDispatcher<>();
     private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<>();
 
     @Override
     public void destroy() {
         super.destroy();
         orderDispatcher.close();
-        emailDispatcher.close();
     }
 
     @Override
@@ -32,11 +30,9 @@ public class NewOrderServlet extends HttpServlet {
 
             var orderId = UUID.randomUUID().toString();
             var order = new Order(orderId, amount, userEmail);
-            var email = new Email("br.com.ecommerce.Order in progress", "Thank you for your order! We are processing your order");
 
             orderDispatcher.send("ECOMMERCE_NEW_ORDER", userEmail, order, new CorrelationId(NewOrderServlet.class.getSimpleName()));
 
-            emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userEmail, email, new CorrelationId(NewOrderServlet.class.getSimpleName()));
 
             System.out.println("New Order sent successfully");
 

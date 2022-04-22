@@ -6,17 +6,18 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 import java.math.BigDecimal;
 import java.util.Map;
+import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 
-public class FraudDetectorService {
-    private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<>();
+public class EmailNewOrderService {
+    private final KafkaDispatcher<Email> emailDispatcher = new KafkaDispatcher<>();
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        var emailService = new FraudDetectorService();
+        var emailService = new EmailNewOrderService();
         try(
             var service = new KafkaService(
-                FraudDetectorService.class.getSimpleName(),
+                EmailNewOrderService.class.getSimpleName(),
                 "ECOMMERCE_NEW_ORDER",
                 emailService::parse,
                 Map.of()
@@ -27,36 +28,21 @@ public class FraudDetectorService {
     }
 
     private void parse(ConsumerRecord<String, Message<Order>> record) throws ExecutionException, InterruptedException {
+        var message = record.value();
+
         System.out.println("------------------------------------");
-        System.out.println("Processing new order, checking for fraud");
+        System.out.println("Processing new order, preparing email");
         System.out.println(record.key());
-        System.out.println(record.value());
+        System.out.println(message);
         System.out.println(record.partition());
         System.out.println(record.offset());
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        var message = record.value();
         var order = message.getPayload();
+        var email = new Email("Order in progress", "Thank you for your order! We are processing your order");
 
-        if(isFraud(order)) {
-//            pretending that the fraud happens when the amount is >= 4500
-            System.out.println("Order is a fraud!!!!"  + order.toString());
-            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getEmail(), order, message.getId().continueWith(FraudDetectorService.class.getSimpleName()));
-        } else {
-            System.out.println("Approved: " + order.toString());
-            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getEmail(), order, message.getId().continueWith(FraudDetectorService.class.getSimpleName()));
-        }
+        CorrelationId id = message.getId().continueWith(EmailNewOrderService.class.getSimpleName());
 
-
-    }
-
-    private boolean isFraud(Order order) {
-        return order.getAmount().compareTo(new BigDecimal("4500")) >= 0;
+        emailDispatcher.send("ECOMMERCE_SEND_EMAIL", order.getEmail(), email, id);
     }
 
 }

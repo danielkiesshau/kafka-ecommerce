@@ -8,21 +8,17 @@ import java.util.concurrent.ExecutionException;
 
 public class NewOrderMain {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        try(var emailDispatcher = new KafkaDispatcher<Email>()) {
-            try(var orderDispatcher = new KafkaDispatcher<Order>()) {
-                var userEmail = Math.random() + "@email.com";
+        try(var orderDispatcher = new KafkaDispatcher<Order>()) {
+            var userEmail = Math.random() + "@email.com";
 
-                for (var i = 0; i < 10; i++) {
-                    var orderId = UUID.randomUUID().toString();
-                    var amount = new BigDecimal(Math.random() * 5000 + 1);
-                    var order = new Order(orderId, amount, userEmail);
-                    var email = new Email("Order in progress", "Thank you for your order! We are processing your order");
+            for (var i = 0; i < 10; i++) {
+                var orderId = UUID.randomUUID().toString();
+                var amount = new BigDecimal(Math.random() * 5000 + 1);
+                var order = new Order(orderId, amount, userEmail);
 
-                    CorrelationId id = new CorrelationId(NewOrderMain.class.getSimpleName());
+                CorrelationId id = new CorrelationId(NewOrderMain.class.getSimpleName());
 
-                    orderDispatcher.send("ECOMMERCE_NEW_ORDER", userEmail, order, id);
-                    emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userEmail, email, id);
-                }
+                orderDispatcher.send("ECOMMERCE_NEW_ORDER", userEmail, order, id);
             }
         }
     }
