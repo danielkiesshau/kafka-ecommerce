@@ -37,7 +37,6 @@ public class CreateUserService {
                         CreateUserService.class.getSimpleName(),
                         "ECOMMERCE_NEW_ORDER",
                         createUserService::parse,
-                        Order.class,
                         Map.of()
                 )
         ) {

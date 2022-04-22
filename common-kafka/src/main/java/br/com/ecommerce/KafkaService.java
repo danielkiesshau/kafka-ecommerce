@@ -16,22 +16,22 @@ public class KafkaService<T> implements Closeable {
     private final ConsumerFunction<T> parse;
 
 
-    public KafkaService(String groupId, String topic, ConsumerFunction<T> parse, Class<T> type, Map<String, String> properties) {
-        this(parse, groupId, type, properties);
+    public KafkaService(String groupId, String topic, ConsumerFunction<T> parse, Map<String, String> properties) {
+        this(parse, groupId, properties);
         var topics = Collections.singletonList(topic);
 
         consumer.subscribe(topics);
     }
 
-    public KafkaService(String groupId, Pattern topic, ConsumerFunction<T> parse, Class<T> type, Map<String, String> properties) {
-        this(parse, groupId, type, properties);
+    public KafkaService(String groupId, Pattern topic, ConsumerFunction<T> parse, Map<String, String> properties) {
+        this(parse, groupId, properties);
 
         consumer.subscribe(topic);
     }
 
-    private KafkaService(ConsumerFunction<T> parse, String groupId, Class<T> type, Map<String, String> properties) {
+    private KafkaService(ConsumerFunction<T> parse, String groupId, Map<String, String> properties) {
         this.parse = parse;
-        this.consumer = new KafkaConsumer(getProperties(groupId, type, properties));
+        this.consumer = new KafkaConsumer(getProperties(groupId, properties));
     }
 
     void run() {
@@ -54,13 +54,14 @@ public class KafkaService<T> implements Closeable {
         }
     }
 
-    private Properties getProperties(String groupId, Class<T> type, Map<String, String> overrideProperties) {
+    private Properties getProperties(String groupId, Map<String, String> overrideProperties) {
         var properties = new Properties();
 
         properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, GsonDeserializer.class.getName());
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, groupId);
+        properties.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "1");
         properties.putAll(overrideProperties);
 
         return properties;

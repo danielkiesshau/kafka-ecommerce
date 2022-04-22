@@ -18,7 +18,6 @@ public class ReadingReportService {
                 ReadingReportService.class.getSimpleName(),
                 "ECOMMERCE_USER_GENERATE_READING_REPORT",
                 fraudDetectorService::parse,
-                User.class,
                 Map.of()
             )
         ) {

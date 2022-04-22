@@ -13,7 +13,6 @@ public class EmailService {
                 EmailService.class.getSimpleName(),
                 "ECOMMERCE_SEND_EMAIL",
                 emailService::parse,
-                Email.class,
                 Map.of()
             )
         ) {

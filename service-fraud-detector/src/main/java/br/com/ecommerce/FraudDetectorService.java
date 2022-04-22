@@ -17,7 +17,6 @@ public class FraudDetectorService {
                 FraudDetectorService.class.getSimpleName(),
                 "ECOMMERCE_NEW_ORDER",
                 fraudDetectorService::parse,
-                Order.class,
                 Map.of()
             )
         ) {
