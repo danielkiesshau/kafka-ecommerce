@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/common-database/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-database/src/main/java/br/com/ecommerce/LocalDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email/src/main/java/br/com/ecommerce/ServiceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/CreateUserService.java" afterDir="false" />
     </list>
@@ -77,8 +77,8 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.CreateUserService">
-    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.br.com.ecommerce.CreateUserService">
+    <configuration name="br.com.ecommerce.CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
       <module name="service-users" />
       <extension name="coverage">
@@ -91,7 +91,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.ecommerce.EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailNewOrderService" />
       <module name="service-email-new-order" />
       <extension name="coverage">
@@ -104,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="br.com.ecommerce.EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
       <module name="service-email-new-order" />
       <extension name="coverage">
@@ -145,19 +145,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CreateUserService" />
-      <item itemvalue="Application.EmailNewOrderService" />
-      <item itemvalue="Application.EmailService" />
+      <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
+      <item itemvalue="Application.br.com.ecommerce.EmailNewOrderService" />
+      <item itemvalue="Application.br.com.ecommerce.EmailService" />
       <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
       <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CreateUserService" />
-        <item itemvalue="Application.EmailNewOrderService" />
+        <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
+        <item itemvalue="Application.br.com.ecommerce.EmailNewOrderService" />
         <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
         <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
-        <item itemvalue="Application.EmailService" />
+        <item itemvalue="Application.br.com.ecommerce.EmailService" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +174,7 @@
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
       <workItem from="1650479953212" duration="25714000" />
-      <workItem from="1650636058715" duration="2338000" />
+      <workItem from="1650636058715" duration="3281000" />
     </task>
     <servers />
   </component>
