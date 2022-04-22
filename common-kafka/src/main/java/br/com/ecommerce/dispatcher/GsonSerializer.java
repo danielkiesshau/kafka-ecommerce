@@ -1,11 +1,11 @@
-package br.com.ecommerce;
+package br.com.ecommerce.dispatcher;
 
+import br.com.ecommerce.Message;
+import br.com.ecommerce.MessageAdapter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.apache.kafka.common.header.Headers;
 import org.apache.kafka.common.serialization.Serializer;
 
-import java.util.Map;
 
 public class GsonSerializer<T> implements Serializer<T> {
     private final Gson gson = new GsonBuilder().registerTypeAdapter(Message.class, new MessageAdapter()).create();

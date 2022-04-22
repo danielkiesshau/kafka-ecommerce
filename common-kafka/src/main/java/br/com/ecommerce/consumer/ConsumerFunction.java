@@ -1,5 +1,6 @@
-package br.com.ecommerce;
+package br.com.ecommerce.consumer;
 
+import br.com.ecommerce.Message;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 

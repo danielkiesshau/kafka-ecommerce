@@ -1,5 +1,8 @@
-package br.com.ecommerce;
+package br.com.ecommerce.consumer;
 
+import br.com.ecommerce.Message;
+import br.com.ecommerce.dispatcher.GsonSerializer;
+import br.com.ecommerce.dispatcher.KafkaDispatcher;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -35,7 +38,7 @@ public class KafkaService<T> implements Closeable {
         this.consumer = new KafkaConsumer(getProperties(groupId, properties));
     }
 
-    void run() throws ExecutionException, InterruptedException {
+    public void run() throws ExecutionException, InterruptedException {
         try (var deadLetter = new KafkaDispatcher<>()) {
             while(true) {
                 var records = consumer.poll(Duration.ofMillis(100));
