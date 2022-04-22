@@ -6,7 +6,7 @@ public class LocalDatabase {
     private final Connection connection;
 
     public LocalDatabase(String name) throws SQLException {
-        String url = "jdbc:sqlite:target" + name + ".db";
+        String url = "jdbc:sqlite:target/" + name + ".db";
 
         this.connection = DriverManager.getConnection(url);
     }
@@ -41,5 +41,9 @@ public class LocalDatabase {
             preparedStatement.setString(i + 1, params[i]);
         }
         return preparedStatement;
+    }
+
+    public void close() throws SQLException {
+        connection.close();
     }
 }

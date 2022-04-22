@@ -29,4 +29,8 @@ public class Order {
     public String getEmail() {
         return this.email;
     }
+
+    public String getOrderId() {
+        return orderId;
+    }
 }

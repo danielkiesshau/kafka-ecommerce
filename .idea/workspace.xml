@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56adc8e6-28bf-4b66-8d43-a79974360e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common-database/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-database/src/main/java/br/com/ecommerce/LocalDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/ecommerce/CreateUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-database/src/main/java/br/com/ecommerce/LocalDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-database/src/main/java/br/com/ecommerce/LocalDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +72,11 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.br.com.ecommerce.CreateUserService">
-    <configuration name="br.com.ecommerce.CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.HttpEcommerceService">
+    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.CreateUserService" />
       <module name="service-users" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -91,9 +87,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.ecommerce.EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailNewOrderService" />
       <module name="service-email-new-order" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.*" />
@@ -104,25 +101,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.com.ecommerce.EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.EmailService" />
-      <module name="service-email-new-order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ecommerce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="br.com.ecommerce.HttpEcommerceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpEcommerceService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.HttpEcommerceService" />
       <module name="service-http-ecommerce" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.ecommerce.dispatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.ecommerce.FraudDetectorService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.ecommerce.FraudDetectorService" />
+      <module name="service-fraud-detector" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ecommerce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,19 +144,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
-      <item itemvalue="Application.br.com.ecommerce.EmailNewOrderService" />
-      <item itemvalue="Application.br.com.ecommerce.EmailService" />
+      <item itemvalue="Application.br.com.ecommerce.FraudDetectorService" />
+      <item itemvalue="Application.CreateUserService" />
+      <item itemvalue="Application.EmailNewOrderService" />
       <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
-      <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
+      <item itemvalue="Application.HttpEcommerceService" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.br.com.ecommerce.CreateUserService" />
-        <item itemvalue="Application.br.com.ecommerce.EmailNewOrderService" />
-        <item itemvalue="Application.br.com.ecommerce.HttpEcommerceService" />
+        <item itemvalue="Application.HttpEcommerceService" />
+        <item itemvalue="Application.br.com.ecommerce.FraudDetectorService" />
+        <item itemvalue="Application.EmailNewOrderService" />
+        <item itemvalue="Application.CreateUserService" />
         <item itemvalue="Application.br.com.ecommerce.ReadingReportService" />
-        <item itemvalue="Application.br.com.ecommerce.EmailService" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +173,7 @@
       <workItem from="1650315801269" duration="2514000" />
       <workItem from="1650377494115" duration="8381000" />
       <workItem from="1650479953212" duration="25714000" />
-      <workItem from="1650636058715" duration="3281000" />
+      <workItem from="1650636058715" duration="5681000" />
     </task>
     <servers />
   </component>
